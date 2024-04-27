@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название вашего сайта</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+</head>
+<body>
+    <!-- Шапка (Header) -->
+    <header>
+        <h1>MCN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="./supportservice.html">Служба поддержки</a></li>
+                <li><a href="referals.html">Рефералы</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="/src/assets/fghj.jpg" alt="" class="fghj">
+    </div>
+    <div class="container">
+        <div id="main">
+            <div class="card">
+                <p>Баланс: <span id="balance">0</span> MCN coin</p>
+                <button id="deposit" onclick="redirectToDepositPage()">Пополнить</button>
+                <button id="withdraw" onclick="redirectToWithdrawPage()">Вывести</button>  
+            </div>
+        </div>
+    </div> 
+    <script>
+        // Получаем значение mcnAmount из URL-параметра
+        var urlParams = new URLSearchParams(window.location.search);
+        var mcnAmount = parseFloat(urlParams.get('mcnAmount')) || 0;
+
+        // Получаем текущее значение из Local Storage
+        var currentAmount = parseInt(localStorage.getItem("mcnAmount")) || 0;
+
+        // Суммируем новое и текущее значения
+        var totalAmount = currentAmount + mcnAmount;
+
+        // Обновляем отображение нового баланса
+        document.getElementById("balance").textContent = totalAmount;
+
+        // Сохраняем новое значение в Local Storage
+        localStorage.setItem("mcnAmount", totalAmount.toString());
+
+        function redirectToHomePage() {
+            window.location.href = "/index.html";
+        }
+    </script>
+<script src="/src/codes/scrypt.js"></script>
+</body>
+</html>

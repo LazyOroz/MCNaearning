@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+header h1 {
+    margin:                                                                                                                                                                                                                                                                                                                                                                                                                                                         0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Устанавливаем направление на вертикальное */
+}
+
+nav ul li {
+    margin-bottom: 20px; /* Добавляем пространство между элементами */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+#main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main p {
+    font-size: 24px;
+}
+
+#balance {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    background-color: #000000;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056ac;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #2b3c3f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(15, 134, 55, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    height: 190px;
+    width: 390px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2965e9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+
+.dep2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.desc1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.int {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ethereum-address {
+    display: inline-block;
+    background-color: #d1d1d1;
+    color:      #000000;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.copy-button {
+    background-color: #2f63f0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    
+} 
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.buttonDeposit{
+    background-color: #3aee33cb;
+    color:      #000000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asd{
+    display: flex;
+    justify-content: center;
+}
+
+.fghj{
+    height: 280px;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+}
+
+.withdraw_html{
+    width: 250px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        background-color: #26363a;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        height: 150px;
+        width: 290px;
+    }
+}
